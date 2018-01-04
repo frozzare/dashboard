@@ -1,0 +1,14 @@
+{
+  "widgets": [
+      {
+          "widget": "datetime",
+          "props": {}
+      },
+      {
+          "widget": "text",
+          "props": {
+              "text": "Happy coding!"
+          }
+      }
+  ]
+}
