@@ -1,6 +1,11 @@
 # dashboard
 
-Dashboard written for personal usage.
+Dashboard written for personal usage. Built with Next.js, React, styled-components and socket.io.
+
+## installation
+
+1. Download or clone the repo.
+2. Run `yarn`
 
 ## custom widget
 
