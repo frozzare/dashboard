@@ -9,16 +9,16 @@ module.exports = {
           {
             loader: 'emit-file-loader',
             options: {
-              name: 'dist/[path][name].[ext].js',
-            },
+              name: 'dist/[path][name].[ext].js'
+            }
           },
           'babel-loader',
-          'styled-jsx-css-loader',
-        ],
+          'styled-jsx-css-loader'
+        ]
       }
     );
     config.plugins.push(
-      new Dotenv({ path: './.env' }),
+      new Dotenv({ path: './.env' })
     );
     return config;
   }

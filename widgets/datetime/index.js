@@ -43,7 +43,7 @@ class DateTime extends Component {
   /**
    * Render component.
    */
-  render() {
+  render () {
     const { date } = this.state;
 
     return (
@@ -56,15 +56,15 @@ class DateTime extends Component {
 }
 
 DateTime.propTypes = {
-    dateFormat: PropTypes.string,
-    interval: PropTypes.number,
-    timeFormat: PropTypes.string
+  dateFormat: PropTypes.string,
+  interval: PropTypes.number,
+  timeFormat: PropTypes.string
 };
 
 DateTime.defaultProps = {
-    interval: 1000,
-    dateFormat: '{DD} {MM} {YYYY}',
-    timeFormat: '{H}:{mm}:{ss}'
+  interval: 1000,
+  dateFormat: '{DD} {MM} {YYYY}',
+  timeFormat: '{H}:{mm}:{ss}'
 };
 
 export default DateTime;

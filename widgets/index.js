@@ -2,6 +2,6 @@ import Datetime from './datetime';
 import Text from './text';
 
 export default {
-  "datetime": Datetime,
-  "text": Text
+  'datetime': Datetime,
+  'text': Text
 };

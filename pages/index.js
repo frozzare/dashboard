@@ -1,4 +1,4 @@
-import Dashboard from '../components/dashboard'
+import Dashboard from '../components/dashboard';
 import Widgets from '../widgets';
 import config from '../config/dashboard.json';
 

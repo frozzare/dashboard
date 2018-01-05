@@ -12,14 +12,13 @@ const Widget = styled.div`
   min-height: 1em;
   background-color: #3e4453;
   overflow: hidden;
-	border-radius: 5px;
+  border-radius: 5px;
 `;
 
 export default ({ children, title = '', className = '' }) => (
-	<Box w={[1, 1/2, 1/4]} p={5}>
+  <Box w={[1, 1 / 2, 1 / 4]} p={5}>
     <Widget className={className}>
-      {title ? <Title>{title}</Title> : ''}
       {children}
     </Widget>
-	</Box>
+  </Box>
 );
