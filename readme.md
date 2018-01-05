@@ -6,7 +6,7 @@ Dashboard written for personal usage.
 
 Create a new folder in `widgets` with a `index.js` file. 
 
-```
+```js
 import Widget from '../../components/widget';
 
 export default ({ text }) => (
