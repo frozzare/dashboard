@@ -7,6 +7,23 @@ Dashboard written for personal usage. Built with Next.js, React, styled-componen
 1. Download or clone the repo.
 2. Run `yarn`
 
+## usage
+
+```
+→ npm run
+Lifecycle scripts included in dashboard:
+  start
+    next start
+
+available via `npm run-script`:
+  build
+    next build
+  dev
+    node server/index.js
+  lint
+    semistandard
+```
+
 ## custom widget
 
 Create a new folder in `widgets` with a `index.js` file. 
