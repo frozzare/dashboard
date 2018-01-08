@@ -2,3 +2,5 @@
 package-lock.json
 node_modules
 .next
+config/*
+!config/dashboard-example.json
