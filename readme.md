@@ -38,8 +38,6 @@ export default ({ text }) => (
 );
 ```
 
-Then add it to `widgets/index.js` with a key that can be used in `config/dashboard.json`
-
 ## socket
 
 Every widget can have a [socket.io](https://socket.io/) connection. Just create `widgets/{name}/socket.js` that exports a function that have one argument that is the socket instance.
