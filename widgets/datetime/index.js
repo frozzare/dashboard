@@ -5,15 +5,15 @@ import Widget from '../../components/widget';
 import styled from 'styled-components';
 
 const Heading = styled.span`
-	font-size: 2em;
-	text-align: center;
-	margin-bottom: 0.5em;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.5em;
 `;
 
 const Text = styled.span`
-	font-size: 1.5em;
-	text-align: center;
-	color: #477dbe;
+  font-size: 1.5em;
+  text-align: center;
+  color: #477dbe;
 `;
 class DateTime extends Component {
   /**
@@ -30,7 +30,10 @@ class DateTime extends Component {
    */
   componentDidMount () {
     const { interval } = this.props;
-    this.interval = setInterval(() => this.setState({ date: new Date() }), interval);
+    this.interval = setInterval(
+      () => this.setState({ date: new Date() }),
+      interval
+    );
   }
 
   /**
@@ -48,8 +51,12 @@ class DateTime extends Component {
 
     return (
       <Widget>
-        <Heading>{tinytime(this.props.timeFormat, { padHours: true }).render(date)}</Heading>
-        <Text>{tinytime(this.props.dateFormat, { padHours: true }).render(date)}</Text>
+        <Heading>
+          {tinytime(this.props.timeFormat, { padHours: true }).render(date)}
+        </Heading>
+        <Text>
+          {tinytime(this.props.dateFormat, { padHours: true }).render(date)}
+        </Text>
       </Widget>
     );
   }

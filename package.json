@@ -20,6 +20,7 @@
     },
     "devDependencies": {
         "babel-eslint": "^8.1.2",
+        "prettier-semistandard": "^0.1.1",
         "semistandard": "^11.0.0"
     },
     "semistandard": {
@@ -29,6 +30,7 @@
         "build": "next build",
         "dev": "node server/index.js",
         "lint": "semistandard",
-        "start": "next start"
+        "start": "next start",
+        "format": "prettier-semistandard 'components/**/*.js' 'pages/*.js' 'server/*.js' 'widgets/**/*.js'"
     }
 }

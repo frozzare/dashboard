@@ -29,7 +29,7 @@ nextApp.prepare().then(() => {
 
   app.get('*', nextHandler);
 
-  server.listen(port, (err) => {
+  server.listen(port, err => {
     if (err) throw err;
     console.log(`Ready on http://localhost:${port}`);
   });

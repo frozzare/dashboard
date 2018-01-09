@@ -15,10 +15,13 @@ const Widget = styled.div`
   border-radius: 5px;
 `;
 
-export default ({ children, title = '', className = '' }) => (
-  <Box w={[1, 1 / 2, 1 / 4]} p={5}>
-    <Widget className={className}>
-      {children}
-    </Widget>
+export default ({
+  children,
+  title = '',
+  className = '',
+  width = [1, 1 / 2, 1 / 4]
+}) => (
+  <Box width={width} p={5}>
+    <Widget className={className}>{children}</Widget>
   </Box>
 );
