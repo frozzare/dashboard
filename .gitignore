@@ -4,7 +4,7 @@ node_modules
 .next
 config/*
 !config/dashboard-example.json
-widget/*
-!widget/datetime
-!widget/image
-!widget/text
+widgets/*
+!widgets/datetime
+!widgets/image
+!widgets/text
