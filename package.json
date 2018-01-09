@@ -12,6 +12,7 @@
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
         "react-stack-grid": "^0.7.0",
+        "request": "^2.83.0",
         "socket.io": "^2.0.4",
         "styled-components": "^2.4.0",
         "styled-jsx-css-loader": "^0.3.0",

@@ -5,6 +5,7 @@ const next = require('next');
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob-fs')();
+const request = require('request');
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
@@ -22,6 +23,10 @@ io.on('connect', socket => {
 });
 
 nextApp.prepare().then(() => {
+  app.get('/proxy', (req, res) => {
+    req.pipe(request(req.query.url)).pipe(res);
+  });
+
   app.get('*', nextHandler);
 
   server.listen(port, (err) => {
