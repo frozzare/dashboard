@@ -30,7 +30,6 @@
         "build": "rm -rf build/config build/server build/.next && mkdir -p build && next build && cp -r .next/ build/.next && cp -r server/ build/server && cp -r config/ build/config",
         "dev": "node server/index.js",
         "lint": "semistandard",
-        "start": "next start",
         "format": "prettier-semistandard 'components/**/*.js' 'pages/*.js' 'server/*.js' 'widgets/**/*.js'"
     }
 }

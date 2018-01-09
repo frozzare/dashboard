@@ -11,17 +11,11 @@ Dashboard written for personal usage. Built with Next.js, React, styled-componen
 
 ```
 → npm run
-Lifecycle scripts included in dashboard:
-  start
-    next start
-
 available via `npm run-script`:
   build
-    next build
   dev
-    node server/index.js
   lint
-    semistandard
+  format
 ```
 
 ## custom widget
