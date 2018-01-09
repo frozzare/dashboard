@@ -27,7 +27,7 @@
         "parser": "babel-eslint"
     },
     "scripts": {
-        "build": "next build",
+        "build": "rm -rf build/config build/server build/.next && mkdir -p build && next build && cp -r .next/ build/.next && cp -r server/ build/server && cp -r config/ build/config",
         "dev": "node server/index.js",
         "lint": "semistandard",
         "start": "next start",
