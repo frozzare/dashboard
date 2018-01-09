@@ -32,6 +32,8 @@ export default ({ text }) => (
 );
 ```
 
+You can configure the width using `width` props with the same value as in [grid-styled](https://github.com/jxnblk/grid-styled).
+
 ## socket
 
 Every widget can have a [socket.io](https://socket.io/) connection. Just create `widgets/{name}/socket.js` that exports a function that have one argument that is the socket instance.
