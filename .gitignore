@@ -8,5 +8,4 @@ widgets/*
 !widgets/datetime
 !widgets/image
 !widgets/text
-build/*
-!build/package.json
+build
