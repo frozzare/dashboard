@@ -11,7 +11,7 @@ const Heading = styled.span`
 `;
 
 const Text = styled.span`
-	font-size: 1em;
+	font-size: 1.5em;
 	text-align: center;
 	color: #477dbe;
 `;
@@ -48,8 +48,8 @@ class DateTime extends Component {
 
     return (
       <Widget>
-        <Heading>{tinytime(this.props.timeFormat).render(date)}</Heading>
-        <Text>{tinytime(this.props.dateFormat).render(date)}</Text>
+        <Heading>{tinytime(this.props.timeFormat, { padHours: true }).render(date)}</Heading>
+        <Text>{tinytime(this.props.dateFormat, { padHours: true }).render(date)}</Text>
       </Widget>
     );
   }
