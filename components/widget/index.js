@@ -19,9 +19,10 @@ export default ({
   children,
   title = '',
   className = '',
-  width = [1, 1 / 2, 1 / 4]
+  width = [1, 1 / 2, 1 / 4],
+  style = {}
 }) => (
   <Box width={width} p={5}>
-    <Widget className={className}>{children}</Widget>
+    <Widget className={className} style={style}>{children}</Widget>
   </Box>
 );
