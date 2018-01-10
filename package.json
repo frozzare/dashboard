@@ -1,37 +1,37 @@
 {
-    "name": "dashboard",
-    "version": "1.0.0",
-    "dependencies": {
-        "babel-plugin-styled-components": "^1.4.0",
-        "dotenv-webpack": "^1.5.4",
-        "express": "^4.16.2",
-        "glob-fs": "^0.1.7",
-        "grid-styled": "^2.0.0-11",
-        "http-auth": "^3.2.3",
-        "next": "^4.2.1",
-        "normalize.css": "^7.0.0",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
-        "react-stack-grid": "^0.7.0",
-        "request": "^2.83.0",
-        "socket.io": "^2.0.4",
-        "styled-components": "^2.4.0",
-        "styled-jsx-css-loader": "^0.3.0",
-        "tinytime": "^0.2.6"
-    },
-    "devDependencies": {
-        "babel-eslint": "^8.1.2",
-        "prettier-semistandard": "^0.1.1",
-        "semistandard": "^11.0.0"
-    },
-    "semistandard": {
-        "parser": "babel-eslint"
-    },
-    "scripts": {
-        "build": "rm -rf build/ && mkdir -p build && next build && cp -r .next/ build/.next && cp -r server/ build/server && cp -r config/ build/config && cp package.json build/",
-        "dev": "node server/index.js",
-        "lint": "semistandard",
-        "format": "prettier-semistandard 'components/**/*.js' 'pages/*.js' 'server/*.js' 'widgets/**/*.js'",
-        "start": "NODE_ENV=production node server/index.js"
-    }
+  "name": "dashboard",
+  "version": "1.0.0",
+  "dependencies": {
+      "babel-plugin-styled-components": "^1.4.0",
+      "dotenv-webpack": "^1.5.4",
+      "express": "^4.16.2",
+      "glob-fs": "^0.1.7",
+      "grid-styled": "^2.0.0-11",
+      "http-auth": "^3.2.3",
+      "next": "^4.2.1",
+      "normalize.css": "^7.0.0",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-stack-grid": "^0.7.0",
+      "request": "^2.83.0",
+      "socket.io": "^2.0.4",
+      "styled-components": "^2.4.0",
+      "styled-jsx-css-loader": "^0.3.0",
+      "tinytime": "^0.2.6"
+  },
+  "devDependencies": {
+      "babel-eslint": "^8.1.2",
+      "prettier-semistandard": "^0.1.1",
+      "semistandard": "^11.0.0"
+  },
+  "semistandard": {
+      "parser": "babel-eslint"
+  },
+  "scripts": {
+      "build": "rm -rf build/ && mkdir -p build && next build && cp -r .next/ build/.next && cp -r server/ build/server && cp -r config/ build/config && cp -r public/ build/public && cp package.json build/",
+      "dev": "node server/index.js",
+      "lint": "semistandard",
+      "format": "prettier-semistandard 'components/**/*.js' 'pages/*.js' 'server/*.js' 'widgets/**/*.js'",
+      "start": "NODE_ENV=production node server/index.js"
+  }
 }
